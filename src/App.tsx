@@ -6,6 +6,7 @@ import { AddShoppingCart } from '@material-ui/icons';
 import Item from './Item/Item';
 import Badge from '@mui/material/Badge';
 import Cart from "./Cart/Cart"
+import Order from './Pages/Order';
 
 //styles
 import { Wrapper, StyledButton } from './App.styles'
@@ -94,6 +95,7 @@ function App() {
           addToCart={handleAddToCart}
           removeFromCart={handleRemoveFromCart} />
       </Drawer>
+      <Order cartItems={cartItems}/>
       <StyledButton onClick={() => setCartOpen(true)}>
         <Badge
 
